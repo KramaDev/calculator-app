@@ -1,0 +1,30 @@
+:root {
+  --color-black: #222;
+  --color-white: #fff;
+  --color-gray: #414141;
+  --color-grayish: #7f8c8d;
+
+  --color-red: #b33939;
+  --color-blue: #3498db;
+  --color-orange: #ff793f;
+  --color-green: #34ad0f;
+
+  --border-round: 1rem;
+  --border-circle: 1600rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Sofia Sans", sans-serif;
+  color: var(--color-white);
+}
+
+body {
+  margin: 0;
+}
+
+//IMPORTS
+//COMPONENTS A-Z
+@import "./components/calculator.scss";
+@import "./components/header.scss";
+@import "./components/layout.scss";
