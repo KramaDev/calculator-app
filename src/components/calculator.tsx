@@ -24,8 +24,7 @@ const Calculator = () => {
   const calculateResult = () => {
     try {
       const result = eval(inputValue);
-      const formattedResult = result.toLocaleString("en-US");
-      setInputValue(formattedResult);
+      setInputValue(result.toString());
     } catch (error) {
       setInputValue("Error");
     }
@@ -49,7 +48,6 @@ const Calculator = () => {
     { label: "3", onClick: () => inputHandler("3") },
     { label: "+", onClick: () => inputHandler("+"), className: "operator" },
     { label: "0", onClick: () => inputHandler("0") },
-    { label: ",", onClick: () => inputHandler(".") },
     { label: "=", onClick: calculateResult, className: "equal" },
   ];
 
